@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/soft-ryzen-test/static/css/main.284b045a.css",
+    "main.js": "/soft-ryzen-test/static/js/main.0310ae2e.js",
+    "index.html": "/soft-ryzen-test/index.html",
+    "main.284b045a.css.map": "/soft-ryzen-test/static/css/main.284b045a.css.map",
+    "main.0310ae2e.js.map": "/soft-ryzen-test/static/js/main.0310ae2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284b045a.css",
+    "static/js/main.0310ae2e.js"
+  ]
+}
