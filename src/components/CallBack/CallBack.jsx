@@ -1,3 +1,5 @@
-const CallBack = () => {};
+const CallBack = () => {
+  return <></>;
+};
 
 export default CallBack;

@@ -1,4 +1,4 @@
 const Team = () => {
-    
-}
-export default Team
+  return <></>;
+};
+export default Team;

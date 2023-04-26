@@ -1,3 +1,5 @@
-const Posts = () => { }
+const Posts = () => {
+  return <></>;
+};
 
-export default Posts
+export default Posts;

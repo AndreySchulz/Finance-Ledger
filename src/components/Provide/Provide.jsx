@@ -1,2 +1,4 @@
-const Provide = () => {};
+const Provide = () => {
+  return <></>;
+};
 export default Provide;

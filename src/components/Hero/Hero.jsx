@@ -1,2 +1,4 @@
-const Hero = () => {};
+const Hero = () => {
+  return <></>;
+};
 export default Hero;
