@@ -1,4 +1,3 @@
-import { Link, animateScroll as scroll } from 'react-scroll';
 import {
   Container,
   HeaderBox,
