@@ -1,3 +1,8 @@
 :root {
   --primary: #28a745;
+  --primaryActive: #2ebf4f;
+  --white: #ffffff;
+  --transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --textColor: #333333;
+  --blue: #0284d0;
 }
