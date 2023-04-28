@@ -10,7 +10,7 @@ import people from '../../assets/images/home/people.jpg';
 
 const Cases = () => {
   return (
-    <CasesBox>
+    <CasesBox id="cases">
       <Container>
         <CasesFirstP>This is what we do</CasesFirstP>
         <CasesHeader>Business Cases</CasesHeader>

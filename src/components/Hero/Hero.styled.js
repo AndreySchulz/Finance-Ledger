@@ -1,19 +1,28 @@
 import styled from 'styled-components';
 import showcase from '../../assets/images/home/showcase@2x.jpg';
+import SVG from 'react-inlinesvg';
+import { device } from 'stylesheet/breakpoints';
 
 export const HeroBox = styled.div`
-  padding-top: 272px;
-  padding-bottom: 270px;
-  max-width: 1360px;
   margin: 0 auto;
-
+  text-align: center;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url(${showcase});
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media ${device.tablet} {
+    padding: 378px 0;
+  }
+  @media ${device.desktop} {
+    max-width: 1360px;
+
+    padding: 270px 0;
+  }
 `;
 
 export const HeroInfo = styled.div`
@@ -39,6 +48,10 @@ export const HeroDescription = styled.p`
 `;
 
 export const HeroBtn = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 175px;
   height: 57px;
   border-radius: 5px;
@@ -51,4 +64,8 @@ export const HeroBtn = styled.button`
   :hover {
     background-color: var(--primaryActive);
   }
+`;
+
+export const BtnSvg = styled(SVG)`
+  margin-right: 8px;
 `;

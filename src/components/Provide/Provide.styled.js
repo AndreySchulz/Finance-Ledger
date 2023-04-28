@@ -1,28 +1,43 @@
 import styled from 'styled-components';
+import { device } from 'stylesheet/breakpoints';
 
 export const ProvideBox = styled.div`
-  margin: 0 auto;
-
   color: var(--white);
 `;
 export const Container = styled.div`
   display: flex;
-  padding-right: 28px;
+
   margin: 0 auto;
-  max-width: 1360px;
+
   background-color: var(--primary);
+
+  @media ${device.desktop} {
+    max-width: 1360px;
+  }
 `;
 
 export const PrivideImg = styled.img`
-  max-width: 670px;
-  margin-right: 20px;
   object-fit: cover;
+
+  @media ${device.tablet} {
+    max-width: 368px;
+  }
+  @media ${device.desktop} {
+    max-width: 670px;
+  }
 `;
 
 export const ProvideInfoBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media ${device.tablet} {
+    padding: 64px 32px;
+  }
+  @media ${device.desktop} {
+    padding-right: 28px;
+  }
 `;
 export const ProvideHeader = styled.h2`
   font-size: 40px;

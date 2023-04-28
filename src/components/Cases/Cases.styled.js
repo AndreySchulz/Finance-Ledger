@@ -1,15 +1,26 @@
 import styled from 'styled-components';
+import { device } from 'stylesheet/breakpoints';
 
 export const CasesBox = styled.div`
-  padding: 80px 0;
   color: var(--textColor);
+  @media ${device.tablet} {
+    padding: 48px 0;
+  }
+  @media ${device.desktop} {
+    padding: 80px 0;
+  }
 `;
 
 export const Container = styled.div`
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 0 28px;
   text-align: center;
+  @media ${device.tablet} {
+    padding: 0 32px;
+  }
+  @media ${device.desktop} {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
 `;
 
 export const CasesFirstP = styled.p`
@@ -33,6 +44,12 @@ export const CasesSecondP = styled.p`
 export const CasesList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 21px;
-  grid-row-gap: 24px;
+
+  @media ${device.tablet} {
+    grid-gap: 18px;
+  }
+  @media ${device.desktop} {
+    grid-column-gap: 21px;
+    grid-row-gap: 24px;
+  }
 `;

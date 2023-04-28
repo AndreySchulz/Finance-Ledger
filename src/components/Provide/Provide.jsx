@@ -10,7 +10,7 @@ import {
 } from './Provide.styled';
 const Provide = () => {
   return (
-    <ProvideBox>
+    <ProvideBox id="about">
       <Container>
         <PrivideImg src={people} alt="our team"></PrivideImg>
         <ProvideInfoBox>

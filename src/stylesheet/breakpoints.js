@@ -1,4 +1,4 @@
-import { desktop, tablet } from 'constants/responsive';
+import { desktop, tablet } from 'constans/responsive';
 
 export const device = {
   mobile: `(max-width: ${tablet - 1}px)`,

@@ -1,22 +1,31 @@
 import styled from 'styled-components';
+import { device } from 'stylesheet/breakpoints';
 
 export const PostBox = styled.div`
-  margin: 0 auto;
-
   color: var(--white);
 `;
 export const Container = styled.div`
   display: flex;
-  padding-left: 28px;
-  margin: 0 auto;
-  max-width: 1360px;
+
   background-color: var(--blue);
+  @media ${device.tablet} {
+  }
+  @media ${device.desktop} {
+    margin: 0 auto;
+    max-width: 1360px;
+  }
 `;
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 20px;
+
+  @media ${device.tablet} {
+    padding: 59px 32px;
+  }
+  @media ${device.desktop} {
+    padding: 28px;
+  }
 `;
 export const PostText = styled.p`
   font-size: 18px;
@@ -50,6 +59,11 @@ export const PostBtn = styled.button`
 `;
 
 export const PostImg = styled.img`
-  max-width: 670px;
   object-fit: cover;
+  @media ${device.tablet} {
+    max-width: 368px;
+  }
+  @media ${device.desktop} {
+    max-width: 670px;
+  }
 `;

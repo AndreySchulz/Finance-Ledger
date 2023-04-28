@@ -11,7 +11,7 @@ import {
 
 const Posts = () => {
   return (
-    <PostBox>
+    <PostBox id="blog">
       <Container>
         <PostInfo>
           <PostText>April 16 2020</PostText>
