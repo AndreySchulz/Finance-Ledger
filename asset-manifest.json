@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soft-ryzen-test/static/css/main.3bf78e92.css",
-    "main.js": "/soft-ryzen-test/static/js/main.f7b73d05.js",
+    "main.js": "/soft-ryzen-test/static/js/main.e4c0c326.js",
     "static/media/showcase@2x.jpg": "/soft-ryzen-test/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/people.jpg": "/soft-ryzen-test/static/media/people.f32f74cc55eb8b3518b7.jpg",
     "index.html": "/soft-ryzen-test/index.html",
@@ -12,10 +12,10 @@
     "static/media/facebook.svg": "/soft-ryzen-test/static/media/facebook.8f8c2fa16ae4352396ab33f4d3b3fe79.svg",
     "static/media/angle-right.svg": "/soft-ryzen-test/static/media/angle-right.270fe299e5318e11071c86d5f3fdea2f.svg",
     "main.3bf78e92.css.map": "/soft-ryzen-test/static/css/main.3bf78e92.css.map",
-    "main.f7b73d05.js.map": "/soft-ryzen-test/static/js/main.f7b73d05.js.map"
+    "main.e4c0c326.js.map": "/soft-ryzen-test/static/js/main.e4c0c326.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf78e92.css",
-    "static/js/main.f7b73d05.js"
+    "static/js/main.e4c0c326.js"
   ]
 }
