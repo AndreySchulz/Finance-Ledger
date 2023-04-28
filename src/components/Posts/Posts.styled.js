@@ -2,10 +2,8 @@ import styled from 'styled-components';
 import { device } from 'stylesheet/breakpoints';
 
 export const PostBox = styled.div`
-  color: var(--white);
-`;
-export const Container = styled.div`
   background-color: var(--blue);
+  color: var(--white);
   @media ${device.tablet} {
     display: flex;
     flex-direction: row-reverse;
@@ -40,8 +38,8 @@ export const PostHeader = styled.h2`
   line-height: 1.37;
   margin-bottom: 24px;
   @media ${device.tablet} {
-    font-size: 18px;
-    line-height: 1.38;
+    font-size: 40px;
+    line-height: 1.35;
   }
 `;
 

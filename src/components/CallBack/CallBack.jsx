@@ -4,7 +4,6 @@ import { Formik } from 'formik';
 import people from '../../assets/images/home/people.jpg';
 import {
   CallBackImg,
-  Container,
   CallbackForm,
   CallbackHeader,
   CallBackField,
@@ -28,42 +27,40 @@ const CallBackSchema = Yup.object().shape({
 const CallBack = () => {
   return (
     <CallbackBox id="contact">
-      <Container>
-        <CallBackImg src={people} alt="our team" />
-        <Formik
-          initialValues={{
-            name: '',
-            email: '',
-          }}
-          validationSchema={CallBackSchema}
-          onSubmit={null}
-        >
-          {({ handleChange, values, errors, touched }) => (
-            <CallbackForm>
-              <CallbackHeader>Request Callback</CallbackHeader>
-              <CallBackField
-                type="name"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-              />
-              <CallBackField
-                type="email"
-                name="email"
-                value={values.email}
-                onChange={handleChange}
-                placeholder="Enter Email*"
-                className={errors.email && touched.email ? 'error' : ''}
-              />
-              {errors.email && touched.email ? (
-                <p>This is a required field</p>
-              ) : null}
-              <SubmitBtn type="submit">Send</SubmitBtn>
-            </CallbackForm>
-          )}
-        </Formik>
-      </Container>
+      <CallBackImg src={people} alt="our team" />
+      <Formik
+        initialValues={{
+          name: '',
+          email: '',
+        }}
+        validationSchema={CallBackSchema}
+        onSubmit={null}
+      >
+        {({ handleChange, values, errors, touched }) => (
+          <CallbackForm>
+            <CallbackHeader>Request Callback</CallbackHeader>
+            <CallBackField
+              type="name"
+              name="name"
+              value={values.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+            />
+            <CallBackField
+              type="email"
+              name="email"
+              value={values.email}
+              onChange={handleChange}
+              placeholder="Enter Email*"
+              className={errors.email && touched.email ? 'error' : ''}
+            />
+            {errors.email && touched.email ? (
+              <p>This is a required field</p>
+            ) : null}
+            <SubmitBtn type="submit">Send</SubmitBtn>
+          </CallbackForm>
+        )}
+      </Formik>
     </CallbackBox>
   );
 };

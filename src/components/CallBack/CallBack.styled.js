@@ -4,9 +4,6 @@ import { device } from 'stylesheet/breakpoints';
 
 export const CallbackBox = styled.div`
   background-color: var(--gray);
-`;
-
-export const Container = styled.div`
   @media ${device.tablet} {
     display: flex;
   }

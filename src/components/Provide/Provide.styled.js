@@ -2,10 +2,8 @@ import styled from 'styled-components';
 import { device } from 'stylesheet/breakpoints';
 
 export const ProvideBox = styled.div`
-  color: var(--white);
-`;
-export const Container = styled.div`
   background-color: var(--primary);
+  color: var(--white);
 
   @media ${device.tablet} {
     display: flex;
