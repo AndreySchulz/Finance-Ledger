@@ -13,6 +13,7 @@ const Posts = () => {
   return (
     <PostBox id="blog">
       <Container>
+        <PostImg src={people} alt="our team"></PostImg>
         <PostInfo>
           <PostText>April 16 2020</PostText>
           <PostHeader>Blog Post One</PostHeader>
@@ -24,7 +25,6 @@ const Posts = () => {
           </PostText>
           <PostBtn>Read Our Blog</PostBtn>
         </PostInfo>
-        <PostImg src={people} alt="our team"></PostImg>
       </Container>
     </PostBox>
   );

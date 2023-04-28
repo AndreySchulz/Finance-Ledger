@@ -3,6 +3,7 @@ import { device } from 'stylesheet/breakpoints';
 
 export const CasesBox = styled.div`
   color: var(--textColor);
+  padding: 56px 0 40px 0px;
   @media ${device.tablet} {
     padding: 48px 0;
   }
@@ -13,6 +14,8 @@ export const CasesBox = styled.div`
 
 export const Container = styled.div`
   text-align: center;
+  padding: 0 20px;
+
   @media ${device.tablet} {
     padding: 0 32px;
   }
@@ -24,15 +27,24 @@ export const Container = styled.div`
 `;
 
 export const CasesFirstP = styled.p`
-  font-size: 18px;
-  line-height: 1.83;
-  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.37;
+  margin-bottom: 31px;
+  @media ${device.tablet} {
+    font-size: 18px;
+    line-height: 1.83;
+    margin-bottom: 16px;
+  }
 `;
 
 export const CasesHeader = styled.h2`
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.37;
   margin-bottom: 24px;
+  @media ${device.tablet} {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 `;
 
 export const CasesSecondP = styled.p`
@@ -43,9 +55,9 @@ export const CasesSecondP = styled.p`
 
 export const CasesList = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  grid-row-gap: 8px;
   @media ${device.tablet} {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 18px;
   }
   @media ${device.desktop} {

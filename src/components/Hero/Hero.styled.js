@@ -4,7 +4,8 @@ import SVG from 'react-inlinesvg';
 import { device } from 'stylesheet/breakpoints';
 
 export const HeroBox = styled.div`
-  margin: 0 auto;
+  padding: 160px 0 104px 0;
+
   text-align: center;
   background-image: linear-gradient(
       0deg,
@@ -20,7 +21,7 @@ export const HeroBox = styled.div`
   }
   @media ${device.desktop} {
     max-width: 1360px;
-
+    margin: 0 auto;
     padding: 270px 0;
   }
 `;
@@ -37,14 +38,20 @@ export const HeroInfo = styled.div`
 export const HeroTitle = styled.h1`
   margin-bottom: 16px;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 40px;
   line-height: 1.36;
+  @media ${device.tablet} {
+    font-size: 55px;
+  }
 `;
 
 export const HeroDescription = styled.p`
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 26px;
   line-height: 1.35;
+  @media ${device.tablet} {
+    font-size: 40px;
+  }
 `;
 
 export const HeroBtn = styled.button`
@@ -54,6 +61,10 @@ export const HeroBtn = styled.button`
 
   width: 175px;
   height: 57px;
+
+  font-size: 18px;
+  line-height: 1.38;
+
   border-radius: 5px;
   border: none;
   background-color: var(--primary);

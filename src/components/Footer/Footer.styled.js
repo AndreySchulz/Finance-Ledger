@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from 'stylesheet/breakpoints';
 
 export const FooterBox = styled.footer`
   padding: 20px 0;
@@ -9,8 +10,12 @@ export const FooterBox = styled.footer`
 export const SocialList = styled.ul`
   display: flex;
   justify-content: center;
+  align-items: baseline;
 
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  @media ${device.tablet} {
+    margin-bottom: 10px;
+  }
 `;
 
 export const SocialItem = styled.li`
