@@ -84,6 +84,7 @@ export const TeamItemOverlay = styled.div`
   opacity: 0;
   position: absolute;
   top: 0;
+  z-index: -1;
 
   display: flex;
   align-items: center;
@@ -97,6 +98,7 @@ export const TeamItemOverlay = styled.div`
   ${TeamOverlayBox}:hover & {
     opacity: 1;
     box-shadow: 1px 2px 11px 2px rgba(10, 11, 11, 0.6);
+    z-index: 1;
   }
 `;
 
