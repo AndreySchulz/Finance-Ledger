@@ -9,8 +9,8 @@ export const PostBox = styled.div`
     flex-direction: row-reverse;
   }
   @media ${device.desktop} {
-    margin: 0 auto;
-    max-width: 1360px;
+    /* margin: 0 auto;
+    max-width: 1360px; */
   }
 `;
 export const PostInfo = styled.div`

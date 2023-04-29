@@ -14,17 +14,23 @@ export const HeaderBox = styled.header`
 export const Container = styled.div`
   padding: 22px;
   text-align: center;
+  height: 120px;
+
+  &.active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
   @media ${device.tablet} {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px 32px;
+    padding: 0 32px;
+    height: 70px;
     text-align: start;
   }
   @media ${device.desktop} {
-    padding: 22px 28px 0 28px;
-    max-width: 1360px;
+    padding: 0 28px;
+    /* max-width: 1360px; */
     margin: 0 auto;
   }
 `;

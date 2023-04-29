@@ -8,8 +8,8 @@ export const CallbackBox = styled.div`
     display: flex;
   }
   @media ${device.desktop} {
-    margin: 0 auto;
-    max-width: 1360px;
+    /* margin: 0 auto;
+    max-width: 1360px; */
   }
 `;
 

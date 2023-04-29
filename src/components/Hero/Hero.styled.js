@@ -20,8 +20,8 @@ export const HeroBox = styled.div`
     padding: 378px 0;
   }
   @media ${device.desktop} {
-    max-width: 1360px;
-    margin: 0 auto;
+    /* max-width: 1360px;
+    margin: 0 auto; */
     padding: 270px 0;
   }
 `;

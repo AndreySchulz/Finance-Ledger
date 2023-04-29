@@ -9,7 +9,7 @@ export const ProvideBox = styled.div`
     display: flex;
   }
   @media ${device.desktop} {
-    max-width: 1360px;
+    /* max-width: 1360px; */
     margin: 0 auto;
   }
 `;
