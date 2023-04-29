@@ -20,7 +20,6 @@ import {
   TeamHeader,
   TeamPhoto,
   TeamList,
-  TeamItem,
   TeamName,
   TeamItemOverlay,
   TeamOverlayBox,

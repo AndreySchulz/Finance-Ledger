@@ -30,8 +30,7 @@ export const SocialLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 35px;
-  height: 35px; */
+
   color: var(--white);
   fill: currentColor;
 
