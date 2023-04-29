@@ -5,6 +5,7 @@ import { device } from 'stylesheet/breakpoints';
 export const HeaderBox = styled.header`
   position: fixed;
   width: 100%;
+  z-index: 2;
 
   color: var(--white);
   @media ${device.tablet} {
