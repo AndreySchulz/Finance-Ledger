@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soft-ryzen-test/static/css/main.2fbc63e6.css",
-    "main.js": "/soft-ryzen-test/static/js/main.46491b04.js",
+    "main.js": "/soft-ryzen-test/static/js/main.0c3b6b99.js",
     "static/media/showcase@2x.jpg": "/soft-ryzen-test/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase.jpg": "/soft-ryzen-test/static/media/showcase.51cab55d982ce4bcedb5.jpg",
     "static/media/people@2x.webp": "/soft-ryzen-test/static/media/people@2x.b884c02c969f0b02cc7a.webp",
@@ -52,6 +52,7 @@
     "static/media/cases2.webp": "/soft-ryzen-test/static/media/cases2.979f90d7f0e5ed9ed242.webp",
     "static/media/cases5.webp": "/soft-ryzen-test/static/media/cases5.e032dfbc6e1d381405ad.webp",
     "index.html": "/soft-ryzen-test/index.html",
+    "static/media/worning.svg": "/soft-ryzen-test/static/media/worning.e0e344da4042aa31c966b699da04b62c.svg",
     "static/media/twit.svg": "/soft-ryzen-test/static/media/twit.d5630ee789816874cd664d0b4f4c6709.svg",
     "static/media/book.svg": "/soft-ryzen-test/static/media/book.ac7a0357577cb7ccc42ee5e4263aa0dd.svg",
     "static/media/youtube.svg": "/soft-ryzen-test/static/media/youtube.162fcfdb367b7bac89a15002f4eeb560.svg",
@@ -59,10 +60,10 @@
     "static/media/facebook.svg": "/soft-ryzen-test/static/media/facebook.8f8c2fa16ae4352396ab33f4d3b3fe79.svg",
     "static/media/angle-right.svg": "/soft-ryzen-test/static/media/angle-right.270fe299e5318e11071c86d5f3fdea2f.svg",
     "main.2fbc63e6.css.map": "/soft-ryzen-test/static/css/main.2fbc63e6.css.map",
-    "main.46491b04.js.map": "/soft-ryzen-test/static/js/main.46491b04.js.map"
+    "main.0c3b6b99.js.map": "/soft-ryzen-test/static/js/main.0c3b6b99.js.map"
   },
   "entrypoints": [
     "static/css/main.2fbc63e6.css",
-    "static/js/main.46491b04.js"
+    "static/js/main.0c3b6b99.js"
   ]
 }
