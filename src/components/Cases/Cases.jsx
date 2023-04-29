@@ -22,6 +22,9 @@ import cases6 from '../../assets/images/cases/cases6.jpg';
 import cases62x from '../../assets/images/cases/cases6@2x.jpg';
 import cases6Web from '../../assets/images/cases/cases6.webp';
 import cases62xWeb from '../../assets/images/cases/cases6@2x.webp';
+
+import 'lightbox2/dist/js/lightbox-plus-jquery';
+import 'lightbox2/dist/css/lightbox.css';
 import {
   Container,
   CasesBox,
@@ -43,82 +46,95 @@ const Cases = () => {
         </CasesSecondP>
         <CasesList>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases1Web} 1x, ${cases12xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases1}1x, ${cases12x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases1} alt="Case 1" />
-            </picture>
+            <a href={cases12x} data-lightbox="cases" data-title="Case 1">
+              <picture>
+                <source
+                  srcSet={`${cases1Web} 1x, ${cases12xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases1}1x, ${cases12x} 2x`}
+                  type="image/jpeg"
+                />
+
+                <img src={cases1} alt="Case 1" />
+              </picture>
+            </a>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases2Web} 1x, ${cases22xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases2}1x, ${cases22x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases2} alt="Case 2" />
-            </picture>
+            <a href={cases22x} data-lightbox="cases" data-title="Case 2">
+              <picture>
+                <source
+                  srcSet={`${cases2Web} 1x, ${cases22xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases2}1x, ${cases22x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={cases2} alt="Case 2" />
+              </picture>
+            </a>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases3Web} 1x, ${cases32xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases3}1x, ${cases32x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases3} alt="Case 3" />
-            </picture>
+            <a href={cases32x} data-lightbox="cases" data-title="Case 3">
+              <picture>
+                <source
+                  srcSet={`${cases3Web} 1x, ${cases32xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases3}1x, ${cases32x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={cases3} alt="Case 3" />
+              </picture>
+            </a>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases4Web} 1x, ${cases42xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases4}1x, ${cases42x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases4} alt="Case 4" />
-            </picture>
+            <a href={cases42x} data-lightbox="cases" data-title="Case 4">
+              <picture>
+                <source
+                  srcSet={`${cases4Web} 1x, ${cases42xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases4}1x, ${cases42x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={cases4} alt="Case 4" />
+              </picture>
+            </a>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases5Web} 1x, ${cases52xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases5}1x, ${cases52x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases5} alt="Case 5" />
-            </picture>
+            <a href={cases52x} data-lightbox="cases" data-title="Case 5">
+              <picture>
+                <source
+                  srcSet={`${cases5Web} 1x, ${cases52xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases5}1x, ${cases52x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={cases5} alt="Case 5" />
+              </picture>
+            </a>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${cases6Web} 1x, ${cases62xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${cases6}1x, ${cases62x} 2x`}
-                type="image/jpeg"
-              />
-              <img src={cases6} alt="Case 6" />
-            </picture>
+            <a href={cases62x} data-lightbox="cases" data-title="Case 6">
+              <picture>
+                <source
+                  srcSet={`${cases6Web} 1x, ${cases62xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${cases6}1x, ${cases62x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={cases6} alt="Case 6" />
+              </picture>
+            </a>
           </li>
         </CasesList>
       </Container>
