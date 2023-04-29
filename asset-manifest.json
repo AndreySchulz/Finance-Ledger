@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/soft-ryzen-test/static/css/main.3bf78e92.css",
-    "main.js": "/soft-ryzen-test/static/js/main.22db501b.js",
+    "main.css": "/soft-ryzen-test/static/css/main.2fbc63e6.css",
+    "main.js": "/soft-ryzen-test/static/js/main.550cd8e2.js",
     "static/media/showcase@2x.jpg": "/soft-ryzen-test/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase.jpg": "/soft-ryzen-test/static/media/showcase.51cab55d982ce4bcedb5.jpg",
     "static/media/people@2x.webp": "/soft-ryzen-test/static/media/people@2x.b884c02c969f0b02cc7a.webp",
@@ -58,11 +58,11 @@
     "static/media/linkedin.svg": "/soft-ryzen-test/static/media/linkedin.18e623fef13f274890be907e5e9c18ac.svg",
     "static/media/facebook.svg": "/soft-ryzen-test/static/media/facebook.8f8c2fa16ae4352396ab33f4d3b3fe79.svg",
     "static/media/angle-right.svg": "/soft-ryzen-test/static/media/angle-right.270fe299e5318e11071c86d5f3fdea2f.svg",
-    "main.3bf78e92.css.map": "/soft-ryzen-test/static/css/main.3bf78e92.css.map",
-    "main.22db501b.js.map": "/soft-ryzen-test/static/js/main.22db501b.js.map"
+    "main.2fbc63e6.css.map": "/soft-ryzen-test/static/css/main.2fbc63e6.css.map",
+    "main.550cd8e2.js.map": "/soft-ryzen-test/static/js/main.550cd8e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bf78e92.css",
-    "static/js/main.22db501b.js"
+    "static/css/main.2fbc63e6.css",
+    "static/js/main.550cd8e2.js"
   ]
 }
