@@ -31,6 +31,11 @@ const CallBackSchema = Yup.object().shape({
 });
 
 const CallBack = () => {
+  const submitForm = (value, { resetForm }) => {
+    alert(value.email);
+    resetForm();
+  };
+
   return (
     <CallbackBox id="contact">
       <picture>
@@ -47,7 +52,7 @@ const CallBack = () => {
           email: '',
         }}
         validationSchema={CallBackSchema}
-        onSubmit={null}
+        onSubmit={submitForm}
       >
         {({ handleChange, values, errors, touched }) => (
           <CallbackForm>
