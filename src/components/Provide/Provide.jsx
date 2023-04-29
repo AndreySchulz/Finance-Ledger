@@ -1,4 +1,7 @@
 import people from '../../assets/images/home/people.jpg';
+import people2x from '../../assets/images/home/contact@2x.jpg';
+import peapleWeb from '../../assets/images/home/people.webp';
+import peaple2xWeb from '../../assets/images/home/people@2x.webp';
 import {
   ProvideBox,
   PrivideImg,
@@ -10,7 +13,14 @@ import {
 const Provide = () => {
   return (
     <ProvideBox id="about">
-      <PrivideImg src={people} alt="our team"></PrivideImg>
+      <picture>
+        <source
+          srcset={`${peapleWeb} 1x, ${peaple2xWeb} 2x`}
+          type="image/webp"
+        />
+        <source srcset={`${people}1x, ${people2x} 2x`} type="image/jpeg" />
+        <PrivideImg src={people} alt="People" />
+      </picture>
       <ProvideInfoBox>
         <ProvideText>What you are looking for</ProvideText>
         <ProvideHeader>We provide bespoke solutions</ProvideHeader>

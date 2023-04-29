@@ -1,4 +1,8 @@
-import people from '../../assets/images/home/people.jpg';
+import blog from '../../assets/images/home/blog.jpg';
+import blog2x from '../../assets/images/home/blog@2x.jpg';
+import blogWeb from '../../assets/images/home/blog.webp';
+import blog2xWeb from '../../assets/images/home/blog@2x.webp';
+
 import {
   PostBox,
   PostInfo,
@@ -11,7 +15,12 @@ import {
 const Posts = () => {
   return (
     <PostBox id="blog">
-      <PostImg src={people} alt="our team"></PostImg>
+      <picture>
+        <source srcset={`${blogWeb} 1x, ${blog2xWeb} 2x`} type="image/webp" />
+        <source srcset={`${blog}1x, ${blog2x} 2x`} type="image/jpeg" />
+        <PostImg src={blog} alt="Blog" />
+      </picture>
+
       <PostInfo>
         <PostText>April 16 2020</PostText>
         <PostHeader>Blog Post One</PostHeader>

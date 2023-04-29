@@ -17,9 +17,11 @@ export const CallBackImg = styled.img`
   object-fit: cover;
   @media ${device.tablet} {
     max-width: 368px;
+    height: 354px;
   }
   @media ${device.desktop} {
     max-width: 670px;
+    height: 454px;
   }
 `;
 export const CallbackForm = styled(Form)`

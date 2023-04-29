@@ -19,9 +19,11 @@ export const PrivideImg = styled.img`
 
   @media ${device.tablet} {
     max-width: 368px;
+    height: 589px;
   }
   @media ${device.desktop} {
     max-width: 670px;
+    height: 460px;
   }
 `;
 
@@ -29,7 +31,10 @@ export const ProvideInfoBox = styled.div`
   padding: 79px 20px;
 
   @media ${device.tablet} {
-    padding: 64px 32px;
+    padding: 62px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   @media ${device.desktop} {
     padding: 80px 28px;

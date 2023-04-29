@@ -1,3 +1,15 @@
+import person1 from '../../assets/images/team/person1.jpg';
+import porson12x from '../../assets/images/team/person1@2x.jpg';
+import person1Web from '../../assets/images/team/person1.webp';
+import peson12xWeb from '../../assets/images/team/person1@2x.webp';
+import person2 from '../../assets/images/team/person2.jpg';
+import person22x from '../../assets/images/team/person2@2x.jpg';
+import personWeb from '../../assets/images/team/person2.webp';
+import porson22xWeb from '../../assets/images/team/person2@2x.webp';
+import person3 from '../../assets/images/team/person3.jpg';
+import person32x from '../../assets/images/team/person3@2x.jpg';
+import person3Web from '../../assets/images/team/person3.webp';
+import person32xWeb from '../../assets/images/team/person3@2x.webp';
 import {
   TeamBox,
   Container,
@@ -8,7 +20,6 @@ import {
   TeamList,
   TeamName,
 } from './Team.styled';
-import people from '../../assets/images/home/people.jpg';
 
 const Team = () => {
   return (
@@ -22,17 +33,47 @@ const Team = () => {
         </TeamSecondP>
         <TeamList>
           <li>
-            <TeamPhoto src={people} alt="111" />
+            <picture>
+              <source
+                srcset={`${person1Web} 1x, ${peson12xWeb} 2x`}
+                type="image/webp"
+              />
+              <source
+                srcset={`${person1}1x, ${porson12x} 2x`}
+                type="image/jpeg"
+              />
+              <TeamPhoto src={person1} alt="John Doe" />
+            </picture>
             <TeamName>John Doe</TeamName>
             <p>President</p>
           </li>
           <li>
-            <TeamPhoto src={people} alt="111" />
+            <picture>
+              <source
+                srcset={`${personWeb} 1x, ${porson22xWeb} 2x`}
+                type="image/webp"
+              />
+              <source
+                srcset={`${person2}1x, ${person22x} 2x`}
+                type="image/jpeg"
+              />
+              <TeamPhoto src={person2} alt="John Doe" />
+            </picture>
             <TeamName>John Doe</TeamName>
             <p>Vice President</p>
           </li>
           <li>
-            <TeamPhoto src={people} alt="111" />
+            <picture>
+              <source
+                srcset={`${person3Web} 1x, ${person32xWeb} 2x`}
+                type="image/webp"
+              />
+              <source
+                srcset={`${person3}1x, ${person32x} 2x`}
+                type="image/jpeg"
+              />
+              <TeamPhoto src={person3} alt="Steve Smith" />
+            </picture>
             <TeamName>Steve Smith</TeamName>
             <p>Marketing Head</p>
           </li>

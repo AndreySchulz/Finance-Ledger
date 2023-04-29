@@ -17,7 +17,7 @@ export const Container = styled.div`
   height: 120px;
 
   &.active {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   }
   @media ${device.tablet} {
     display: flex;

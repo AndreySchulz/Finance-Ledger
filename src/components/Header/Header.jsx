@@ -20,6 +20,7 @@ const Header = () => {
   };
   const handleResize = () => {
     let screenWidth = document.documentElement.clientWidth;
+
     if (screenWidth >= 768) {
       SetScreen(-70);
       return;

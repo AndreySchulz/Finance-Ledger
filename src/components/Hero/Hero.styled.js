@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import showcase from '../../assets/images/home/showcase@2x.jpg';
+import showcase from '../../assets/images/home/showcase.jpg';
+import showcase2x from '../../assets/images/home/showcase@2x.jpg';
 import SVG from 'react-inlinesvg';
 import { device } from 'stylesheet/breakpoints';
 
@@ -15,6 +16,17 @@ export const HeroBox = styled.div`
     url(${showcase});
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(${showcase2x});
+  }
 
   @media ${device.tablet} {
     padding: 378px 0;

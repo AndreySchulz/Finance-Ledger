@@ -18,6 +18,9 @@ export const PostInfo = styled.div`
 
   @media ${device.tablet} {
     padding: 59px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   @media ${device.desktop} {
     padding: 80px 28px;
@@ -68,8 +71,10 @@ export const PostImg = styled.img`
   object-fit: cover;
   @media ${device.tablet} {
     max-width: 368px;
+    height: 493px;
   }
   @media ${device.desktop} {
     max-width: 670px;
+    height: 460px;
   }
 `;

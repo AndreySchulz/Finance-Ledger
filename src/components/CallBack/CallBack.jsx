@@ -1,7 +1,10 @@
 import * as Yup from 'yup';
 import { Formik } from 'formik';
 
-import people from '../../assets/images/home/people.jpg';
+import contact from '../../assets/images/home/contact.jpg';
+import contact2x from '../../assets/images/home/contact@2x.jpg';
+import contactWeb from '../../assets/images/home/contact.webp';
+import contact2xWeb from '../../assets/images/home/contact@2x.webp';
 import {
   CallBackImg,
   CallbackForm,
@@ -27,7 +30,14 @@ const CallBackSchema = Yup.object().shape({
 const CallBack = () => {
   return (
     <CallbackBox id="contact">
-      <CallBackImg src={people} alt="our team" />
+      <picture>
+        <source
+          srcset={`${contactWeb} 1x, ${contact2xWeb} 2x`}
+          type="image/webp"
+        />
+        <source srcset={`${contact}1x, ${contact2x} 2x`} type="image/jpeg" />
+        <CallBackImg src={contact} alt="Contact" />
+      </picture>
       <Formik
         initialValues={{
           name: '',
