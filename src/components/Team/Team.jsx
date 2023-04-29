@@ -1,3 +1,4 @@
+import SVG from 'react-inlinesvg';
 import person1 from '../../assets/images/team/person1.jpg';
 import porson12x from '../../assets/images/team/person1@2x.jpg';
 import person1Web from '../../assets/images/team/person1.webp';
@@ -10,6 +11,7 @@ import person3 from '../../assets/images/team/person3.jpg';
 import person32x from '../../assets/images/team/person3@2x.jpg';
 import person3Web from '../../assets/images/team/person3.webp';
 import person32xWeb from '../../assets/images/team/person3@2x.webp';
+import { facebook, linkedin, twit, youtube } from '../../assets/images/icon';
 import {
   TeamBox,
   Container,
@@ -18,8 +20,16 @@ import {
   TeamHeader,
   TeamPhoto,
   TeamList,
+  TeamItem,
   TeamName,
+  TeamItemOverlay,
+  TeamOverlayBox,
 } from './Team.styled';
+import {
+  SocialItem,
+  SocialLink,
+  SocialList,
+} from 'components/Footer/Footer.styled';
 
 const Team = () => {
   return (
@@ -33,47 +43,125 @@ const Team = () => {
         </TeamSecondP>
         <TeamList>
           <li>
-            <picture>
-              <source
-                srcset={`${person1Web} 1x, ${peson12xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcset={`${person1}1x, ${porson12x} 2x`}
-                type="image/jpeg"
-              />
-              <TeamPhoto src={person1} alt="John Doe" />
-            </picture>
+            <TeamOverlayBox>
+              <picture>
+                <source
+                  srcset={`${person1Web} 1x, ${peson12xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcset={`${person1}1x, ${porson12x} 2x`}
+                  type="image/jpeg"
+                />
+                <TeamPhoto src={person1} alt="John Doe" />
+              </picture>
+              <TeamItemOverlay>
+                <SocialList>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={facebook} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={twit} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={youtube} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={linkedin} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                </SocialList>
+              </TeamItemOverlay>
+            </TeamOverlayBox>
             <TeamName>John Doe</TeamName>
             <p>President</p>
           </li>
           <li>
-            <picture>
-              <source
-                srcset={`${personWeb} 1x, ${porson22xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcset={`${person2}1x, ${person22x} 2x`}
-                type="image/jpeg"
-              />
-              <TeamPhoto src={person2} alt="John Doe" />
-            </picture>
+            <TeamOverlayBox>
+              <picture>
+                <source
+                  srcset={`${personWeb} 1x, ${porson22xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcset={`${person2}1x, ${person22x} 2x`}
+                  type="image/jpeg"
+                />
+                <TeamPhoto src={person2} alt="John Doe" />
+              </picture>
+              <TeamItemOverlay>
+                <SocialList>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={facebook} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={twit} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={youtube} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={linkedin} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                </SocialList>
+              </TeamItemOverlay>
+            </TeamOverlayBox>
             <TeamName>John Doe</TeamName>
             <p>Vice President</p>
           </li>
           <li>
-            <picture>
-              <source
-                srcSet={`${person3Web} 1x, ${person32xWeb} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${person3}1x, ${person32x} 2x`}
-                type="image/jpeg"
-              />
-              <TeamPhoto src={person3} alt="Steve Smith" />
-            </picture>
+            <TeamOverlayBox>
+              <picture>
+                <source
+                  srcSet={`${person3Web} 1x, ${person32xWeb} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${person3}1x, ${person32x} 2x`}
+                  type="image/jpeg"
+                />
+                <TeamPhoto src={person3} alt="Steve Smith" />
+              </picture>
+              <TeamItemOverlay>
+                <SocialList>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={facebook} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={twit} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={youtube} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                  <SocialItem>
+                    <SocialLink href="/">
+                      <SVG src={linkedin} width={35} height={35} />
+                    </SocialLink>
+                  </SocialItem>
+                </SocialList>
+              </TeamItemOverlay>
+            </TeamOverlayBox>
             <TeamName>Steve Smith</TeamName>
             <p>Marketing Head</p>
           </li>
