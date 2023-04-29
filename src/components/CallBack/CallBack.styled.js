@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Field, Form } from 'formik';
 import { device } from 'stylesheet/breakpoints';
+import SVG from 'react-inlinesvg';
 
 export const CallbackBox = styled.div`
   background-color: var(--gray);
@@ -25,6 +26,7 @@ export const CallBackImg = styled.img`
   }
 `;
 export const CallbackForm = styled(Form)`
+  position: relative;
   width: 100%;
   padding: 51px 20px 25px 20px;
 
@@ -42,11 +44,12 @@ export const CallbackForm = styled(Form)`
 export const CallbackHeader = styled.h2`
   font-size: 32px;
   line-height: 1.5;
-  margin-bottom: 31px;
+  margin-bottom: 69px;
   color: var(--textColor);
   @media ${device.tablet} {
     font-size: 40px;
     line-height: 1.35;
+    margin-bottom: 24px;
   }
 `;
 
@@ -65,11 +68,17 @@ export const CallBackField = styled(Field)`
 
   color: #808080;
 
+  :nth-child(3) {
+    margin-bottom: 24px;
+  }
+
   @media ${device.tablet} {
-    margin-bottom: 25px;
     font-size: 18px;
     line-height: 1.38;
-    :last-child {
+  }
+
+  @media ${device.desktop} {
+    :nth-child(3) {
       margin-bottom: 40px;
     }
   }
@@ -93,3 +102,20 @@ export const SubmitBtn = styled.button`
     background-color: var(--primaryActive);
   }
 `;
+
+export const ErrorText = styled.p`
+  position: absolute;
+  bottom: 84px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: red;
+  @media ${device.tablet} {
+    bottom: 91px;
+  }
+  @media ${device.desktop} {
+    bottom: 140px;
+  }
+`;
+
+export const ErrorIcon = styled(SVG)``;

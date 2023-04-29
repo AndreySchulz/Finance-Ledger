@@ -4,5 +4,6 @@ import facebook from './facebook.svg';
 import linkedin from './linkedin.svg';
 import twit from './twit.svg';
 import youtube from './youtube.svg';
+import worning from './worning.svg';
 
-export { book, angleRight, facebook, linkedin, twit, youtube };
+export { book, angleRight, facebook, linkedin, twit, youtube, worning };

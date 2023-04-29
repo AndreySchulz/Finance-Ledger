@@ -5,6 +5,7 @@ import contact from '../../assets/images/home/contact.jpg';
 import contact2x from '../../assets/images/home/contact@2x.jpg';
 import contactWeb from '../../assets/images/home/contact.webp';
 import contact2xWeb from '../../assets/images/home/contact@2x.webp';
+import { worning } from 'assets/images/icon';
 import {
   CallBackImg,
   CallbackForm,
@@ -12,6 +13,8 @@ import {
   CallBackField,
   SubmitBtn,
   CallbackBox,
+  ErrorText,
+  ErrorIcon,
 } from './CallBack.styled';
 
 const CallBackSchema = Yup.object().shape({
@@ -65,7 +68,10 @@ const CallBack = () => {
               className={errors.email && touched.email ? 'error' : ''}
             />
             {errors.email && touched.email ? (
-              <p>This is a required field</p>
+              <ErrorText>
+                <ErrorIcon src={worning} width={16} height={15} />
+                This is a required field
+              </ErrorText>
             ) : null}
             <SubmitBtn type="submit">Send</SubmitBtn>
           </CallbackForm>
