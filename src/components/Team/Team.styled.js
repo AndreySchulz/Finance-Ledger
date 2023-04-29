@@ -68,29 +68,27 @@ export const TeamList = styled.ul`
     grid-column-gap: 21px;
   }
 `;
-export const TeamItem = styled.li`
+
+export const TeamPhoto = styled.img``;
+export const TeamOverlayBox = styled.div`
   position: relative;
-`;
-export const TeamPhoto = styled.img`
   margin-bottom: 16px;
+
   @media ${device.tablet} {
     margin-bottom: 14px;
   }
-`;
-export const TeamOverlayBox = styled.div`
-  position: relative;
 `;
 export const TeamItemOverlay = styled.div`
   opacity: 0;
   position: absolute;
   top: 0;
+  bottom: 0;
   z-index: -1;
 
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: -webkit-fill-available;
 
   transition: var(--transition);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
