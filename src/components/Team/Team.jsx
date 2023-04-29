@@ -65,11 +65,11 @@ const Team = () => {
           <li>
             <picture>
               <source
-                srcset={`${person3Web} 1x, ${person32xWeb} 2x`}
+                srcSet={`${person3Web} 1x, ${person32xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${person3}1x, ${person32x} 2x`}
+                srcSet={`${person3}1x, ${person32x} 2x`}
                 type="image/jpeg"
               />
               <TeamPhoto src={person3} alt="Steve Smith" />

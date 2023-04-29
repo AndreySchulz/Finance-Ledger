@@ -45,11 +45,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases1Web} 1x, ${cases12xWeb} 2x`}
+                srcSet={`${cases1Web} 1x, ${cases12xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases1}1x, ${cases12x} 2x`}
+                srcSet={`${cases1}1x, ${cases12x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases1} alt="Case 1" />
@@ -58,11 +58,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases2Web} 1x, ${cases22xWeb} 2x`}
+                srcSet={`${cases2Web} 1x, ${cases22xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases2}1x, ${cases22x} 2x`}
+                srcSet={`${cases2}1x, ${cases22x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases2} alt="Case 2" />
@@ -71,11 +71,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases3Web} 1x, ${cases32xWeb} 2x`}
+                srcSet={`${cases3Web} 1x, ${cases32xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases3}1x, ${cases32x} 2x`}
+                srcSet={`${cases3}1x, ${cases32x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases3} alt="Case 3" />
@@ -84,11 +84,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases4Web} 1x, ${cases42xWeb} 2x`}
+                srcSet={`${cases4Web} 1x, ${cases42xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases4}1x, ${cases42x} 2x`}
+                srcSet={`${cases4}1x, ${cases42x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases4} alt="Case 4" />
@@ -97,11 +97,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases5Web} 1x, ${cases52xWeb} 2x`}
+                srcSet={`${cases5Web} 1x, ${cases52xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases5}1x, ${cases52x} 2x`}
+                srcSet={`${cases5}1x, ${cases52x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases5} alt="Case 5" />
@@ -110,11 +110,11 @@ const Cases = () => {
           <li>
             <picture>
               <source
-                srcset={`${cases6Web} 1x, ${cases62xWeb} 2x`}
+                srcSet={`${cases6Web} 1x, ${cases62xWeb} 2x`}
                 type="image/webp"
               />
               <source
-                srcset={`${cases6}1x, ${cases62x} 2x`}
+                srcSet={`${cases6}1x, ${cases62x} 2x`}
                 type="image/jpeg"
               />
               <img src={cases6} alt="Case 6" />

@@ -31,6 +31,7 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
+    handleResize();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

@@ -16,8 +16,8 @@ const Posts = () => {
   return (
     <PostBox id="blog">
       <picture>
-        <source srcset={`${blogWeb} 1x, ${blog2xWeb} 2x`} type="image/webp" />
-        <source srcset={`${blog}1x, ${blog2x} 2x`} type="image/jpeg" />
+        <source srcSet={`${blogWeb} 1x, ${blog2xWeb} 2x`} type="image/webp" />
+        <source srcSet={`${blog}1x, ${blog2x} 2x`} type="image/jpeg" />
         <PostImg src={blog} alt="Blog" />
       </picture>
 

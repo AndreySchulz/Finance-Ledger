@@ -32,10 +32,10 @@ const CallBack = () => {
     <CallbackBox id="contact">
       <picture>
         <source
-          srcset={`${contactWeb} 1x, ${contact2xWeb} 2x`}
+          srcSet={`${contactWeb} 1x, ${contact2xWeb} 2x`}
           type="image/webp"
         />
-        <source srcset={`${contact}1x, ${contact2x} 2x`} type="image/jpeg" />
+        <source srcSet={`${contact}1x, ${contact2x} 2x`} type="image/jpeg" />
         <CallBackImg src={contact} alt="Contact" />
       </picture>
       <Formik

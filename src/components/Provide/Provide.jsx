@@ -15,10 +15,10 @@ const Provide = () => {
     <ProvideBox id="about">
       <picture>
         <source
-          srcset={`${peapleWeb} 1x, ${peaple2xWeb} 2x`}
+          srcSet={`${peapleWeb} 1x, ${peaple2xWeb} 2x`}
           type="image/webp"
         />
-        <source srcset={`${people}1x, ${people2x} 2x`} type="image/jpeg" />
+        <source srcSet={`${people}1x, ${people2x} 2x`} type="image/jpeg" />
         <PrivideImg src={people} alt="People" />
       </picture>
       <ProvideInfoBox>
