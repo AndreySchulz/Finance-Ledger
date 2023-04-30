@@ -55,10 +55,10 @@ const CallBack = () => {
         onSubmit={submitForm}
       >
         {({ handleChange, values, errors, touched }) => (
-          <CallbackForm>
+          <CallbackForm name="contact" method="post">
             <CallbackHeader>Request Callback</CallbackHeader>
             <CallBackField
-              type="name"
+              type="text"
               name="name"
               value={values.name}
               onChange={handleChange}
