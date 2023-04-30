@@ -1,4 +1,3 @@
-import SVG from 'react-inlinesvg';
 import person1 from '../../assets/images/team/person1.jpg';
 import porson12x from '../../assets/images/team/person1@2x.jpg';
 import person1Web from '../../assets/images/team/person1.webp';
@@ -11,7 +10,7 @@ import person3 from '../../assets/images/team/person3.jpg';
 import person32x from '../../assets/images/team/person3@2x.jpg';
 import person3Web from '../../assets/images/team/person3.webp';
 import person32xWeb from '../../assets/images/team/person3@2x.webp';
-import { facebook, linkedin, twit, youtube } from '../../assets/images/icon';
+
 import {
   TeamBox,
   Container,
@@ -24,11 +23,7 @@ import {
   TeamItemOverlay,
   TeamOverlayBox,
 } from './Team.styled';
-import {
-  SocialItem,
-  SocialLink,
-  SocialList,
-} from 'components/Footer/Footer.styled';
+import Social from 'components/Social/Social';
 
 const Team = () => {
   return (
@@ -55,28 +50,7 @@ const Team = () => {
                 <TeamPhoto src={person1} alt="John Doe" />
               </picture>
               <TeamItemOverlay>
-                <SocialList>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={facebook} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={twit} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={youtube} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={linkedin} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                </SocialList>
+                <Social className="team" />
               </TeamItemOverlay>
             </TeamOverlayBox>
             <TeamName>John Doe</TeamName>
@@ -96,28 +70,7 @@ const Team = () => {
                 <TeamPhoto src={person2} alt="John Doe" />
               </picture>
               <TeamItemOverlay>
-                <SocialList>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={facebook} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={twit} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={youtube} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={linkedin} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                </SocialList>
+                <Social className="team" />
               </TeamItemOverlay>
             </TeamOverlayBox>
             <TeamName>John Doe</TeamName>
@@ -137,28 +90,7 @@ const Team = () => {
                 <TeamPhoto src={person3} alt="Steve Smith" />
               </picture>
               <TeamItemOverlay>
-                <SocialList>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={facebook} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={twit} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={youtube} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                  <SocialItem>
-                    <SocialLink href="/">
-                      <SVG src={linkedin} width={35} height={35} />
-                    </SocialLink>
-                  </SocialItem>
-                </SocialList>
+                <Social className="team" />
               </TeamItemOverlay>
             </TeamOverlayBox>
             <TeamName>Steve Smith</TeamName>

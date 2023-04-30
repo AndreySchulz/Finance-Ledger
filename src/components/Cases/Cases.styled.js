@@ -72,6 +72,5 @@ export const CasesItem = styled.li`
     -moz-opacity: 0.8;
     filter: alpha(opacity=80) black;
     -khtml-opacity: 0.8;
-    background-color: #000;
   }
 `;
