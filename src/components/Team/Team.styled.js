@@ -74,6 +74,13 @@ export const TeamOverlayBox = styled.div`
   position: relative;
   margin-bottom: 16px;
 
+  transition: var(--transition);
+  cursor: pointer;
+
+  :hover {
+    transform: scale(1.03);
+  }
+
   @media ${device.tablet} {
     margin-bottom: 14px;
   }

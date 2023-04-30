@@ -32,6 +32,7 @@ import {
   CasesHeader,
   CasesSecondP,
   CasesList,
+  CasesItem,
 } from './Cases.styled';
 
 const Cases = () => {
@@ -45,7 +46,7 @@ const Cases = () => {
           sapiente!
         </CasesSecondP>
         <CasesList>
-          <li>
+          <CasesItem>
             <a href={cases12x} data-lightbox="cases" data-title="Case 1">
               <picture>
                 <source
@@ -60,8 +61,8 @@ const Cases = () => {
                 <img src={cases1} alt="Case 1" />
               </picture>
             </a>
-          </li>
-          <li>
+          </CasesItem>
+          <CasesItem>
             <a href={cases22x} data-lightbox="cases" data-title="Case 2">
               <picture>
                 <source
@@ -75,8 +76,8 @@ const Cases = () => {
                 <img src={cases2} alt="Case 2" />
               </picture>
             </a>
-          </li>
-          <li>
+          </CasesItem>
+          <CasesItem>
             <a href={cases32x} data-lightbox="cases" data-title="Case 3">
               <picture>
                 <source
@@ -90,8 +91,8 @@ const Cases = () => {
                 <img src={cases3} alt="Case 3" />
               </picture>
             </a>
-          </li>
-          <li>
+          </CasesItem>
+          <CasesItem>
             <a href={cases42x} data-lightbox="cases" data-title="Case 4">
               <picture>
                 <source
@@ -105,8 +106,8 @@ const Cases = () => {
                 <img src={cases4} alt="Case 4" />
               </picture>
             </a>
-          </li>
-          <li>
+          </CasesItem>
+          <CasesItem>
             <a href={cases52x} data-lightbox="cases" data-title="Case 5">
               <picture>
                 <source
@@ -120,8 +121,8 @@ const Cases = () => {
                 <img src={cases5} alt="Case 5" />
               </picture>
             </a>
-          </li>
-          <li>
+          </CasesItem>
+          <CasesItem>
             <a href={cases62x} data-lightbox="cases" data-title="Case 6">
               <picture>
                 <source
@@ -135,7 +136,7 @@ const Cases = () => {
                 <img src={cases6} alt="Case 6" />
               </picture>
             </a>
-          </li>
+          </CasesItem>
         </CasesList>
       </Container>
     </CasesBox>

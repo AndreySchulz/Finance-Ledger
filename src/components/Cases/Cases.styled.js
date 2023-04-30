@@ -65,3 +65,13 @@ export const CasesList = styled.ul`
     grid-row-gap: 24px;
   }
 `;
+export const CasesItem = styled.li`
+  transition: var(--transition);
+  :hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+    background-color: #000;
+  }
+`;
