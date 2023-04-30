@@ -31,8 +31,28 @@ const CallBackSchema = Yup.object().shape({
 });
 
 const CallBack = () => {
-  const submitForm = (value, { resetForm }) => {
-    alert(value.email);
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+  const onSubmit = (values, { setSubmitting, resetForm }) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'contact',
+        ...values,
+      }),
+    })
+      .then(() => {
+        alert('Success!');
+        setSubmitting(false);
+      })
+      .catch(error => {
+        alert('Error: Please Try Again!');
+        setSubmitting(false);
+      });
     resetForm();
   };
 
@@ -52,10 +72,23 @@ const CallBack = () => {
           email: '',
         }}
         validationSchema={CallBackSchema}
-        onSubmit={submitForm}
+        onSubmit={onSubmit}
       >
-        {({ handleChange, values, errors, touched }) => (
-          <CallbackForm name="contact" method="post">
+        {({
+          handleChange,
+          handleSubmit,
+          handleReset,
+          values,
+          errors,
+          touched,
+        }) => (
+          <CallbackForm
+            name="contact"
+            onSubmit={handleSubmit}
+            onReset={handleReset}
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
             <CallbackHeader>Request Callback</CallbackHeader>
             <CallBackField
               type="text"
