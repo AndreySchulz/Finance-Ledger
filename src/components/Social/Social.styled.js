@@ -27,6 +27,7 @@ export const SocialLink = styled.a`
 
   color: var(--white);
   fill: currentColor;
+  transition: var(--transition);
 
   &.team {
     :hover {
